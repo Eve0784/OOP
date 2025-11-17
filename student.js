@@ -21,4 +21,10 @@ class Student {
             console.log('Errore, voto non valido');
         }
     }
+    creaScheda() {
+    const scheda = "nome: "+ this.name+ "\n"+ 
+                   "cognome: "+ this.surname+ "\n"+
+                   "media: " + this.calculateAverage();
+    return scheda;    
+}
 }

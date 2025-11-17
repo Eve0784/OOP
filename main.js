@@ -18,14 +18,17 @@ const leonardo = new Student("leonardo", "silva",[3, 4, 4, 2, 5]);
 // console.log(calculateStudentAverage(stefania));
 // console.log(calculateStudentAverage(leonardo));
 
-console.log(stefania.calculateAverage());
-console.log(leonardo.calculateAverage());
+// console.log(stefania.calculateAverage());
+// console.log(leonardo.calculateAverage());
 
 stefania.addMark(10);
 console.log(stefania);
 
 leonardo.addMark(20);
 console.log(leonardo);
+
+console.log(stefania.creaScheda());
+console.log(leonardo.creaScheda());
 
 
 // function addMark(student, newMark) {

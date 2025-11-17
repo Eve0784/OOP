@@ -21,6 +21,13 @@ const leonardo = new Student("leonardo", "silva",[3, 4, 4, 2, 5]);
 console.log(stefania.calculateAverage());
 console.log(leonardo.calculateAverage());
 
+stefania.addMark(10);
+console.log(stefania);
+
+leonardo.addMark(20);
+console.log(leonardo);
+
+
 // function addMark(student, newMark) {
 //     if (newMark >= 0 && newMark <= 10) {
 //         student.marks.push(newMark)

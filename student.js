@@ -1,22 +1,21 @@
-class Student {
+class Student extends Human {
     constructor(name, surname, marks) {
-        this.name = name;
-        this.surname = surname;
-        if(marks){
+        super(name, surname)
+        if (marks) {
             this.marks = marks;
         }
-        else{
+        else {
             this.marks = [];
         }
     }
     //  constructor(name, surname, marks = []) {
     //     this.name = name;
     //     this.surname = surname;
-    //         this.marks = marks;
+    //     this.marks = marks;
     //     }
-    
+
     calculateAverage() {
-        if(this.marks.length === 0){
+        if (this.marks.length === 0) {
             return "non disponibile";
         }
         let sum = 0;
@@ -36,10 +35,9 @@ class Student {
         }
     }
     toString() {
-    const scheda = "nome: "+ this.name+ "\n"+ 
-                   "cognome: "+ this.surname+ "\n"+
-                   "media: " + this.calculateAverage();
-    return scheda;    
-}
+        const scheda = super.toString() + "\n" +
+            "media: " + this.calculateAverage();
+        return scheda;
+    }
 }
 

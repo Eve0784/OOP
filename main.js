@@ -1,10 +1,7 @@
 //console.log('object oriented programming');
 
 //const stefania = {name: "stefania", surname: "dagnino", marks:[10, 9, 7, 8, 8]};
-
-
 //const leonardo = {name: "leonardo", surname: "silva", marks:[3, 4, 4, 2, 5]};
-
 
 // function calculateStudentAverage(student) {
 //     let sum = 0;
@@ -65,10 +62,34 @@
 
 
 //--------------ESERCIZIO RETTANGOLO------------------//
- const rect1 = new Rectangle(30,20,'rosso');
- console.log(rect1.calculateArea());
- console.log(rect1.calculatePerimeter());
- console.log(rect1.toString());
+//  const rect1 = new Rectangle(30,20,'rosso');
+//  console.log(rect1.calculateArea());
+//  console.log(rect1.calculatePerimeter());
+//  console.log(rect1.toString());
  
+
+ //----------------------------ESERCIZIO TEACHER / STUDENTS / TUTOR------------------------//
  
- 
+const stefania = new Student("stefania", "dagnino", [10, 9, 7, 8, 8]);
+const leonardo = new Student("leonardo", "silva", [3, 4, 4, 2, 5]);
+const salma = new Student("salma", "sobhi", []);
+
+const andrea = new Teacher("andrea", "asioli", [stefania, leonardo, salma]);
+
+const eros = new StudentTutor("eros", "balan", [10, 9, 7, 8, 8], leonardo);
+
+console.log(stefania.toString());
+console.log(andrea.toString());
+console.log(eros.toString());
+
+eros.addMark(7);
+console.log(eros.calculateAverage());
+
+leonardo.addMark(10);
+leonardo.addMark(9);
+leonardo.addMark(9.5);
+leonardo.addMark(8);
+
+console.log(leonardo.calculateAverage());
+
+console.log(eros.calculateAverage());

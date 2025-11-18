@@ -27,10 +27,6 @@ console.log(stefania);
 leonardo.addMark(20);
 console.log(leonardo);
 
-console.log(stefania.creaScheda());
-console.log(leonardo.creaScheda());
-
-
 // function addMark(student, newMark) {
 //     if (newMark >= 0 && newMark <= 10) {
 //         student.marks.push(newMark)
@@ -53,3 +49,7 @@ console.log(leonardo.creaScheda());
 // }
 // console.log(creaScheda(stefania));
 // console.log(creaScheda(leonardo));
+
+
+console.log(stefania.creaScheda());
+console.log(leonardo.creaScheda());

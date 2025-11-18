@@ -16,4 +16,13 @@ class StudentTutor extends Student{
         }
         return newAverage;
     }
+    toString() {
+        const string = super.toString() + "\n" +
+            "media: " + this.calculateAverage() + "\n" +
+            "----------------\n" +
+            "allievo: " + this.tutee.name + " " + this.tutee.surname + "\n" +
+            "media allievo: " + this.tutee.calculateAverage();
+
+        return string;
+    }
 }

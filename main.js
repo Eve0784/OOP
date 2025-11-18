@@ -72,24 +72,48 @@
  
 const stefania = new Student("stefania", "dagnino", [10, 9, 7, 8, 8]);
 const leonardo = new Student("leonardo", "silva", [3, 4, 4, 2, 5]);
-const salma = new Student("salma", "sobhi", []);
-
-const andrea = new Teacher("andrea", "asioli", [stefania, leonardo, salma]);
+const salma = new Student("salma", "sobhi", [6, 6, 6]);
 
 const eros = new StudentTutor("eros", "balan", [10, 9, 7, 8, 8], leonardo);
 
-console.log(stefania.toString());
-console.log(andrea.toString());
-console.log(eros.toString());
+const andrea = new Teacher("andrea", "asioli", [stefania, leonardo, salma]);
+const evelyn = new Teacher("evelyn", "medina", [eros]);
+
+const elisabetta = new Principal("elisabbetta", "fegino", [andrea, evelyn]);
+
+// console.log(stefania.toString());
+// console.log(andrea.toString());
+// console.log(eros.toString());
 
 eros.addMark(7);
-console.log(eros.calculateAverage());
+// console.log(eros.calculateAverage());
 
 leonardo.addMark(10);
 leonardo.addMark(9);
 leonardo.addMark(9.5);
 leonardo.addMark(8);
 
-console.log(leonardo.calculateAverage());
+// console.log(leonardo.calculateAverage());
 
-console.log(eros.calculateAverage());
+// console.log(eros.calculateAverage());
+
+console.log(andrea.toString());
+
+//nome: andrea
+//cognome: asioli
+//--------------------
+//allievi:
+//stefania dagnino - media: 8
+//leonardo silva - media: 6.0555
+//salma sobhi - media: 6
+//--------------------
+//media della classe :6,68
+
+
+console.log(elisabetta.toString())
+//nome: elisabetta
+//cognome: fegino
+//--------------------
+//insegnanti:
+//asioli andrea - numero studenti: 3
+//evelin medina - numero studenti: 1

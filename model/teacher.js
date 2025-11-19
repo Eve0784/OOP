@@ -1,6 +1,6 @@
 class Teacher extends Human {
-    constructor(name, surname, students) {
-        super(name, surname);
+    constructor(name, surname, yob, students) {
+        super(name, surname, yob);
         this.students = students;
     }
     calculateClassAverage(){
@@ -12,8 +12,7 @@ class Teacher extends Human {
         return Average;
     }
     toString() {
-        let string = "Insegnante: \nNome: " + this.name + "\n" +
-            "Cognome: " + this.surname + "\n" +
+        let string = "Insegnante \n"+ super.toString() + "\n" +
             "-------------------------------------\n" +
             "Allievi: \n";
         for (const student of this.students) {

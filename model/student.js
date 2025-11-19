@@ -1,6 +1,6 @@
 class Student extends Human {
-    constructor(name, surname, marks) {
-        super(name, surname)
+    constructor(name, surname, yob, marks) {
+        super(name, surname, yob)
         if (marks) {
             this.marks = marks;
         }
@@ -28,7 +28,7 @@ class Student extends Human {
     }
     addMark(newMark) {
         if (newMark >= 0 && newMark <= 10) {
-            this.marks.push(newMark)
+            this.marks.push(newMark);
         }
         else {
             console.log('Errore, voto non valido');

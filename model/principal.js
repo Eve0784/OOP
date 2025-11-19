@@ -1,10 +1,10 @@
 class Principal extends Human{
-    constructor(name, surname, teachers) {
-        super(name, surname);
+    constructor(name, surname, yob, teachers) {
+        super(name, surname, yob);
         this.teachers = teachers;
     }
     toString() {
-        let string = "Preside: \n" + super.toString()+"\n" +
+        let string = "Preside \n" + super.toString()+"\n" +
              "-------------------------------------\n"+
             "Insegnanti: "+ "\n";
         

@@ -1,6 +1,6 @@
 class StudentTutor extends Student{
-    constructor(name, surname, marks, tutee) {
-        super(name, surname, marks)
+    constructor(name, surname, yob, marks, tutee) {
+        super(name, surname, yob, marks)
         this.tutee = tutee;
     }
     calculateAverage(){

@@ -4,8 +4,10 @@ class Principal extends Human{
         this.teachers = teachers;
     }
     toString() {
-        const principal = "nome: " + this.name + "\n" +
-            "cognome: " + this.surname + "\n" + "------------------\n";
+        const principal = "Preside: \nNome: " + this.name + "\n" +
+            "Cognome: " + this.surname + "\n" +
+             "-------------------------------------\n"+
+            "Insegnanti: "+ "\n";
 
         let teacherslist = "";
         

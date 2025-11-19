@@ -18,10 +18,9 @@ class StudentTutor extends Student{
     }
     toString() {
         const string = super.toString() + "\n" +
-            "media: " + this.calculateAverage() + "\n" +
-            "----------------\n" +
-            "allievo: " + this.tutee.name + " " + this.tutee.surname + "\n" +
-            "media allievo: " + this.tutee.calculateAverage();
+            "-------------------------------------\n" +
+            "Allievo: " + this.tutee.name + " " + this.tutee.surname + "\n" +
+            "Media allievo: " + this.tutee.calculateAverage();
 
         return string;
     }

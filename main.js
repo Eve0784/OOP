@@ -83,7 +83,7 @@ const elisabetta = new Principal("elisabbetta", "fegino", [andrea, evelyn]);
 
 // console.log(stefania.toString());
 // console.log(andrea.toString());
-// console.log(eros.toString());
+
 
 eros.addMark(7);
 // console.log(eros.calculateAverage());
@@ -93,6 +93,7 @@ leonardo.addMark(9);
 leonardo.addMark(9.5);
 leonardo.addMark(8);
 
+console.log(eros.toString());
 // console.log(leonardo.calculateAverage());
 
 // console.log(eros.calculateAverage());
